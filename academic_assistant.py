@@ -5,7 +5,7 @@ import time
 from openai import OpenAI
 from langchain_openai import ChatOpenAI
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 
@@ -18,7 +18,7 @@ from langchain.memory import ConversationBufferMemory
 
 import tempfile
 
-load_dotenv()
+# load_dotenv()
 
 # openai_key = os.getenv('OPENAI_KEY')
 openai_key = st.secrets["OPENAI_KEY"]
